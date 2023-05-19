@@ -1,0 +1,1054 @@
+<html>
+    <style>
+        .accordion {
+          background-color: #eee;
+          color: #444;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+          transition: 0.4s;
+        }
+        
+        .active, .accordion:hover {
+          background-color: #ccc; 
+        }
+        
+        .panel {
+          padding: 0 18px;
+          display: none;
+          background-color: white;
+          overflow: hidden;
+        }
+    </style>
+    <body>
+        <h1>ISTQB® Certified Tester Syllabus Foundation Level</h1>
+        <h5>Compatible with Syllabus version 2018 v3.1</h5>
+        <a href="https://istqb-main-web-prod.s3.amazonaws.com/media/documents/ISTQB-CTFL-2018v3.1_Sample-Exam-A-Questions_v1.7.pdf">Exam Questions Copied From Here</a><br>
+        <a href="https://istqb-main-web-prod.s3.amazonaws.com/media/documents/ISTQB-CTFL-2018v3.1_Sample-Exam-A-Answers_v1.7.pdf">Exam Answers Copied From Here</a>
+
+        <h2>Question #1 (1 Point)</h2>
+        <h4>Which one of the following answers describes a test condition?</h4>
+        <ol type='a'>
+            <li>A distinguishing characteristic of a component or system</li>
+            <li>A testable aspect of a component or system identified as a basis for testing</li>
+            <li>The degree to which a software product provides functions which meet stated and implied</li>
+            <li>Test cases designed to execute combinations of conditions and actions resulting from them</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #1</button>
+        <div class="panel">
+            <h5>Answer: b</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is not correct. Definition of feature according to glossary</li>
+                    <li>Is correct. From glossary</li>
+                    <li>Is not correct. Definition of functionality suitability according to glossary</li>
+                    <li>Is not correct. Like Definition of Decision table testing according to glossary</li>
+                </ol>
+            </p>
+        </div>
+
+        <h2>Question #2 (1 Point)</h2>
+        <h4>Which of the following statements is a valid objective for testing?</h4>
+        <ol type='a'>
+            <li>The test should start as late as possible so that development had enough time to create a good product</li>
+            <li>To validate whether the test object works as expected by the users and other stakeholders</li>
+            <li>To prove that all possible defects are identified</li>
+            <li>To prove that any remaining defects will not cause any failures</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #2</button>
+        <div class="panel">
+            <h5>Answer: b</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is not correct. Contradiction to principle 3: "Early testing saves time and money"</li>
+                    <li>Is correct. This is one objective of testing</li>
+                    <li>Is not correct. Principle #2 states that exhaustive testing is impossible, so one can never prove that all defects were identified</li>
+                    <li>Is not correct. To make an assessment whether a defect will cause a failure or not, one must detect the defect first. Saying that no remaining defect will cause a failure implicitly means that all defects were found. This again contradicts principle #2</li>
+                </ol>
+            </p>
+        </div>
+
+        <h2>Question #3 (1 Point)</h2>
+        <h4>Which of the following statements correctly describes the difference between testing and debugging?</h4>
+        <ol type='a'>
+            <li>Testing identifies the source of defects; debugging analyzes the defects and proposes prevention activities</li>
+            <li>Dynamic testing shows failures caused by defects; debugging eliminates the defects, which are the source of failures</li>
+            <li>Testing removes faults; but debugging removes defects that cause the faults</li>
+            <li>Dynamic testing prevents the causes of failures; debugging removes the failures</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #3</button>
+        <div class="panel">
+            <h5>Answer: b</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is not correct. Testing does not identify the source of defects, debugging identifies the source of defects</li>
+                    <li>Is correct. Dynamic testing can show failures that are caused by defects in the software. Debugging eliminates the defects, which are the source of failures</li>
+                    <li>Is not correct. Testing does not remove faults, but debugging removes faults, which is synonymous with defects, that may cause the failures</li>
+                    <li>Is not correct. Dynamic testing does not directly prevent the causes of failures (defects) but detects the presence of defects</li>
+                </ol>
+            </p>
+        </div>
+
+        <h2>Question #4 (1 Point)</h2>
+        <h4>Which one of the statements below describes the most common situation for a failure discovered during testing or in production?</h4>
+        <ol type='a'>
+            <li>The product crashed when the user selected an option in a dialog box</li>
+            <li>The wrong version of a compiled source code file was included in the build</li>
+            <li>The computation algorithm used the wrong input variables</li>
+            <li>The developer misinterpreted the requirement for the algorithm</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #4</button>
+        <div class="panel">
+            <h5>Answer: a</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is correct. A crash is clearly noticeable by the user</li>
+                    <li>Is not correct. This is a defect, not a failure since there is something wrong in the code. It may not result in a visible or noticeable failure, for example, if the changes in the source code file are only in comments</li>
+                    <li>Is not correct. The use of wrong input variables may not result in a visible or noticeable failure, for example, if nobody uses this particular algorithm; or if the wrong input variable has a similar value to the correct input variable; or if the FALSE result of the algorithm is not used</li>
+                    <li>Is not correct. This type of fault will not necessarily lead to a failure; for example, if no one uses this special algorithm</li>
+                </ol>
+            </p>
+        </div>
+
+        <h2>Question #5 (1 Point)</h2>
+        <h4>Mr. Test has been testing software applications on mobile devices for a period of 5 years. He has a wealth of experience in testing mobile applications and achieves better results in a shorter time than others. Over several months, Mr. Test did not modify the existing automated test cases and did not create any new test cases. This leads to fewer and fewer defects being found by executing the tests. What principle of testing did Mr. Test not observe?</h4>
+        <ol type='a'>
+            <li>Testing depends on the environment</li>
+            <li>Exhaustive testing is not possible</li>
+            <li>Repeating the same tests will not find new defects</li>
+            <li>Defects cluster together</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #5</button>
+        <div class="panel">
+            <h5>Answer: c</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is not correct. Testing is context dependent, regardless of it being manual or automated (principle #6), but does not result in detecting a decreasing number of faults as described above</li>
+                    <li>Is not correct. Exhaustive testing is impossible, regardless of the amount of effort put into testing (principle #2)</li>
+                    <li>Is correct. Principle #5 says "If the same tests are repeated over and over again, eventually these tests no longer find any new defects. To detect new defects, existing tests and test data may need changing, and new tests may need to be written." Automated regression testing of the same test cases will not bring new findings</li>
+                    <li>Is not correct. "Defects cluster together" (principle #4). A small number of modules usually contain most of the defects, but this does not mean that fewer and fewer defects will be found</li>
+                </ol>
+            </p>
+        </div>
+
+        <h2>Question #6 (1 Point)</h2>
+        <h4>In what way can testing be part of Quality Assurance?</h4>
+        <ol type='a'>
+            <li>It ensures that requirements are detailed enough</li>
+            <li>Testing reduces the risk of poor software quality</li>
+            <li>It ensures that standards in the organization are followed</li>
+            <li>It measures the quality of software in terms of the number of executed test cases</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #6</button>
+        <div class="panel">
+            <h5>Answer: b</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is not correct. Static testing (reviews) contributes, but could not ensure that requirements are detailed enough</li>
+                    <li>Is correct. Testing contributes to the achievement of quality in a variety of ways, e.g., such as reducing the risk of inadequate software quality</li>
+                    <li>Is not correct. This is quality assurance but not testing</li>
+                    <li>Is not correct. The quality cannot be measured by counting the number of executed test cases without knowing the outcome</li>
+                </ol>
+            </p>
+        </div>
+
+        <h2>Question #7 (1 Point)</h2>
+        <h4>Which of the following activities is part of the main activity "test analysis" in the test process?</h4>
+        <ol type='a'>
+            <li>Identifying any required infrastructure and tools</li>
+            <li>Creating test suites from test scripts</li>
+            <li>Analyzing lessons learned for process improvement</li>
+            <li>Evaluating the test basis for testability</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #7</button>
+        <div class="panel">
+            <h5>Answer: d</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is not correct. This activity is performed during the test design activity (test design)</li>
+                    <li>Is not correct. This activity is performed during the test implementation activity (test implementation)</li>
+                    <li>Is not correct. This activity is performed during the test completion activity (test completion)</li>
+                    <li>Is correct. This activity is performed during the test analysis activity (test analysis)</li>
+                </ol>
+            </p>
+        </div>
+
+        <h2>Question #8 (1 Point)</h2>
+        <h4>Match the following test work products (1-4) with the right description (A-D).</h4>
+        <ol type='1'>
+            <li>Test suite</li>
+            <li>Test case</li>
+            <li>Test script</li>
+            <li>Test charter</li>
+        </ol>
+
+        <ol type='a'>
+            <li>A set of test scripts to be executed in a specific test run</li>
+            <li>A set of instructions for the execution of a test</li>
+            <li>Contains expected results</li>
+            <li>Documentation of test activities in session-based exploratory testing</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #8</button>
+        <div class="panel">
+            <p>
+                Glossary defines the following tests as:
+                <ul>
+                    <li>Test suite: "A set of test scripts or test procedures to be executed in a specific test run." (1A)</li>
+                    <li>Test case: "A set of preconditions, inputs, actions (where applicable), expected results and post conditions, developed based on test conditions." (2C)</li>
+                    <li>Test script: "A sequence of instructions for the execution of a test." (3B)</li>
+                    <li>Test charter: "Documentation of test activities in session-based exploratory testing." (4D)</li>
+                </ul>
+                Thus, the correct match is:
+                <ul>
+                    <li>1. Test suite - A</li>
+                    <li>2. Test case - C</li>
+                    <li>3. Test script - B</li>
+                    <li>4. Test charter - D</li>
+                </ul>
+            </p>
+        </div>
+
+        <h2>Question #9 (1 Point)</h2>
+        <h4>How can white-box testing be applied during user acceptance testing?</h4>
+        <ol type='a'>
+            <li>To check if large volumes of data can be transferred between integrated systems</li>
+            <li>To check if all code statements and code decision paths have been executed</li>
+            <li>To check if all work process flows have been covered</li>
+            <li>To cover all web page navigations</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #9</button>
+        <div class="panel">
+            <h5>Answer: c</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is not correct. This is relevant for integration testing.</li>
+                    <li>Is not correct. This is relevant for component testing.</li>
+                    <li>Is correct. For acceptance testing, tests are designed to cover all work process flows defined in the functional requirements documents.</li>
+                    <li>Is not correct. This is not directly related to white-box testing during user acceptance testing.</li>
+                </ol>
+            </p>
+        </div>
+
+        <h2>Question #10 (1 Point)</h2>
+        <h4>Which of the following statements comparing component testing and system testing is TRUE?</h4>
+        <ol type='a'>
+            <li>Component testing verifies the functionality of software modules, program objects, and classes that are separately testable, whereas system testing verifies interfaces between components and interactions between different parts of the system</li>
+            <li>Test cases for component testing are usually derived from component specifications, design specifications, or data models, whereas test cases for system testing are usually derived from requirement specifications or use cases</li>
+            <li>Component testing only focuses on functional characteristics, whereas system testing focuses on functional and non-functional characteristics</li>
+            <li>Component testing is the responsibility of the testers, whereas system testing typically is the responsibility of the users of the system</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #10</button>
+        <div class="panel">
+            <h5>Answer: b</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is not correct. System testing does not test interfaces between components and interactions between different parts of the system; this is the target of integration tests.</li>
+                    <li>Is correct. Examples of work products that can be used as a test basis for component testing include detailed design, code, data model, component specifications. Examples of work products for system testing include system and software requirement specifications (functional and non-functional) and use cases.</li>
+                    <li>Is not correct. Component testing does not only focus on functional characteristics.</li>
+                    <li>Is not correct. Component tests are also executed by developers, whereas system testing typically is the responsibility of independent testers.</li>
+                </ol>
+            </p>
+        </div>
+
+        <h2>Question #11 (1 Point)</h2>
+        <h4>Which one of the following is TRUE?</h4>
+        <ol type='a'>
+            <li>The purpose of regression testing is to check if the correction has been successfully implemented, while the purpose of confirmation testing is to confirm that the correction has no side effects</li>
+            <li>The purpose of regression testing is to detect unintended side effects, while the purpose of confirmation testing is to check if the system is still working in a new environment</li>
+            <li>The purpose of regression testing is to detect unintended side effects, while the purpose of confirmation testing is to check if the original defect has been fixed</li>
+            <li>The purpose of regression testing is to check if the new functionality is working, while the purpose of confirmation testing is to check if the original defect has been fixed</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #11</button>
+        <div class="panel">
+            <h5>Answer: c</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is not correct. Regression testing does not check the successful implementation of corrections, and confirmation testing does not check for side effects.</li>
+                    <li>Is not correct. The statement about confirmation testing should be about regression testing.</li>
+                    <li>Is correct. The purpose of regression testing is to detect unintended side effects, while the purpose of confirmation testing is to check if the original defect has been fixed.</li>
+                    <li>Is not correct. Testing new functionality is not regression testing.</li>
+                </ol>
+            </p>
+        </div>
+                
+        <h2>Question #12 (1 Point)</h2>
+        <h4>Which one of the following is the BEST definition of an incremental development model?</h4>
+        <ol type='a'>
+            <li>Defining requirements, designing software, and testing are done in phases where in each phase a piece of the system is added</li>
+            <li>A phase in the development process should begin when the previous phase is complete</li>
+            <li>Testing is viewed as a separate phase which takes place after development has been completed</li>
+            <li>Testing is added to development as an increment</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #12</button>
+        <div class="panel">
+            <h5>Answer: a</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is correct. Incremental development involves establishing requirements, designing, building, and testing a system in pieces.</li>
+                    <li>Is not correct. This is a sequential model.</li>
+                    <li>Is not correct. This describes the waterfall model.</li>
+                    <li>Is not correct. Testing alone is not an increment/additional step in the development.</li>
+                </ol>
+            </p>
+        </div>
+
+        <h2>Question #13 (1 Point)</h2>
+        <h4>Which of the following should NOT be a trigger for maintenance testing?</h4>
+        <ol type='a'>
+            <li>Decision to test the maintainability of the software</li>
+            <li>Decision to test the system after migration to a new operating platform</li>
+            <li>Decision to test if archived data is possible to be retrieved</li>
+            <li>Decision to test after "hot fixes"</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #13</button>
+        <div class="panel">
+            <h5>Answer: a</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is correct. This is maintainability testing, not maintenance testing.</li>
+                    <li>Is not correct. This is a trigger for maintenance testing: Operational tests of the new environment as well as the changed software.</li>
+                    <li>Is not correct. This is the trigger for maintenance testing: testing restore/retrieve procedures after archiving for long retention periods.</li>
+                    <li>Is not correct. This is the trigger for maintenance testing: Reactive modification of a delivered software product to correct emergency defects that have caused actual failures.</li>
+                </ol>
+            </p>
+        </div>
+          
+        <h2>Question #14 (1 Point)</h2>
+        <h4>Which of the following options are roles in a formal review?</h4>
+        <ol type='a'>
+            <li>Developer, Moderator, Review leader, Reviewer, Tester</li>
+            <li>Author, Moderator, Manager, Reviewer, Developer</li>
+            <li>Author, Manager, Review leader, Reviewer, Designer</li>
+            <li>Author, Moderator, Review leader, Reviewer, Scribe</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #14</button>
+        <div class="panel">
+            <h5>Answer: d</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is not correct. Tester and developer are NOT roles in a formal review.</li>
+                    <li>Is not correct. Developer is NOT a role in a formal review.</li>
+                    <li>Is not correct. Designer is NOT a role in a formal review.</li>
+                    <li>Is correct. The roles in a formal review typically include an author, moderator, review leader, reviewer, and scribe.</li>
+                </ol>
+            </p>
+        </div>
+        
+        <h2>Question #15 (1 Point)</h2>
+        <h4>Which activities are carried out within the planning of a formal review?</h4>
+        <ol type='a'>
+            <li>Collection of metrics for the evaluation of the effectiveness of the review</li>
+            <li>Answer any questions the participants may have</li>
+            <li>Definition and Verification of fulfillment of entry criteria for the review</li>
+            <li>Evaluation of the review findings against the exit criteria</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #15</button>
+        <div class="panel">
+            <h5>Answer: c</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is not correct. 'Collection of metrics' belongs to the main activity "Fixing and Reporting."</li>
+                    <li>Is not correct. 'Answer any question' belongs to the main activity "Initiate Review."</li>
+                    <li>Is correct. The checking of entry criteria takes place in the planning of a formal review.</li>
+                    <li>Is not correct. The evaluation of the review findings against the exit criteria belongs to the main activity "Issue communication and analysis."</li>
+                </ol>
+            </p>
+        </div>
+
+        <h2>Question #16 (1 Point)</h2>
+        <h4>Which of the review types below is the BEST option to choose when the review must follow a formal process based on rules and checklists?</h4>
+        <ol type='a'>
+            <li>Informal Review</li>
+            <li>Technical Review</li>
+            <li>Inspection</li>
+            <li>Walkthrough</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #16</button>
+        <div class="panel">
+            <h5>Answer: c</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is not correct. Informal review does not use a formal process.</li>
+                    <li>Is not correct. The use of checklists is optional.</li>
+                    <li>Is correct. Inspection is a formal process based on rules and checklists.</li>
+                    <li>Is not correct. It does not explicitly require a formal process, and the use of checklists is optional.</li>
+                </ol>
+            </p>
+        </div>
+
+        <h2>Question #17 (1 Point)</h2>
+        <h4>Which of the following statements about static testing are MOST true?</h4>
+        <ol type='a'>
+            <li>Static testing is a cheap way to detect and remove defects</li>
+            <li>Static testing makes dynamic testing less challenging</li>
+            <li>Static testing makes it possible to find run-time problems early in the lifecycle</li>
+            <li>When testing safety-critical systems, static testing has less value because dynamic testing finds the defects better</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #17</button>
+        <div class="panel">
+            <h5>Answer: a</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is correct. Defects found early are often much cheaper to remove than defects detected later in the lifecycle.</li>
+                    <li>Is not correct. Dynamic testing still has its challenges because it finds other types of defects.</li>
+                    <li>Is not correct. This is dynamic testing.</li>
+                    <li>Is not correct. Static testing is important for safety-critical computer systems.</li>
+                </ol>
+            </p>
+        </div>
+                    
+        <h2>Question #18 (1 Point)</h2>
+        <h4>You will be invited to a review. The work product to be reviewed is a description of the in-house document creation process. The aim of the description is to present the work distribution between the different roles involved in the process in a way that can be clearly understood by everyone. You will be invited to a checklist-based review. The checklist will also be sent to you. It includes the following points:</h4>
+        <ol type='i'>
+            <li>Is the person who performs the activity clearly identified for each activity?</li>
+            <li>Are the entry criteria clearly defined for each activity?</li>
+            <li>Are the exit criteria clearly defined for each activity?</li>
+            <li>Are the supporting roles and their scope of work clearly defined for each activity?</li>
+        </ol>
+        In the following we show an excerpt of the work result to be reviewed, for which you should use the checklist above:
+        <p>"After checking the customer documentation for completeness and correctness, the software architect creates the system specification. Once the software architect has completed the system specification, he invites testers and verifiers to the review. A checklist describes the scope of the review. Each invited reviewer creates review comments - if necessary - and concludes the review with an official review done-comment."</p>
+        <h4>Which of the following statements about your review is correct?</h4>
+        <ol type='a'>
+            <li>Point ii) of the checklist has been violated because it is not clear which condition must be fulfilled to invite to the review</li>
+            <li>You notice that in addition to the tester and the verifier, the validator must also be invited. Since this item is not part of your checklist, you do not create a corresponding comment</li>
+            <li>Point iii) of the checklist has been violated as it is not clear what marks the review as completed</li>
+            <li>Point i) of the checklist has been violated because it is not clear who is providing the checklist for the invitation to the review</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #18</button>
+        <div class="panel">
+            <h5>Answer: d</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is not correct. It is described that the software architect must have completed the system specification</li>
+                    <li>Is not correct. 'Checklist-based', last sentence it is documented that you should also look for defects outside the checklist</li>
+                    <li>Is not correct. It is described: every reviewer did his review done comment</li>
+                    <li>Is correct. It is described that a checklist is available, but who provides the checklist?</li>
+                </ol>
+            </p>
+        </div>
+        
+        <h2>Question #19 (1 Point)</h2>
+        <h4>What is checklist-based testing?</h4>
+        <ol type='a'>
+            <li>A test technique in which tests are derived based on the tester's knowledge of past faults, or general knowledge of failures</li>
+            <li>A test technique based on an analysis of the specification of a component or system</li>
+            <li>An experience-based test technique whereby the experienced tester uses a list of items to be noted, checked, or remembered, or a set of rules or criteria against which a product must be verified</li>
+            <li>An approach to testing where the testers dynamically design and execute tests based on their knowledge, exploration of the test item and the results of previous tests</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #19</button>
+        <div class="panel">
+            <h5>Answer: c</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is not correct. This is error guessing</li>
+                    <li>Is not correct. This is black-box test technique</li>
+                    <li>Is correct. See reasons from incorrect answers</li>
+                    <li>Is not correct. This is exploratory testing</li>
+                </ol>
+            </p>
+        </div>
+
+        <h2>Question #20 (1 Point)</h2>
+        <h4>Which one of the following options is categorized as a black-box test technique?</h4>
+        <ol type='a'>
+            <li>A technique based on analysis of the architecture</li>
+            <li>A technique checking that the test object is working according to the detailed design</li>
+            <li>A technique based on the knowledge of past faults, or general knowledge of failures</li>
+            <li>A technique based on formal requirements</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #20</button>
+        <div class="panel">
+            <h5>Answer: d</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is not correct. This is a white-box test technique</li>
+                    <li>Is not correct. This is a white-box test technique</li>
+                    <li>Is not correct. This is an experience-based test technique</li>
+                    <li>Is correct. Black-box test techniques are based on an analysis of the appropriate test basis (e.g., formal requirements documents, specifications, use cases, user stories)</li>
+                </ol>
+            </p>
+        </div>
+
+        <h2>Question #21 (1 Point)</h2>
+        <h4>The following statement refers to decision coverage: “When the code contains only a single ‘if’ statement and no loops or CASE statements, and its execution is not nested within the test, any single test case we run will result in 50% decision coverage.” Which of the following statement is correct?</h4>
+        <ol type='a'>
+            <li>The statement is true. Any single test case provides 100% statement coverage and therefore 50% decision coverage</li>
+            <li>The statement is true. Any single test case would cause the outcome of the “if” statement to be either true or false</li>
+            <li>The statement is false. A single test case can only guarantee 25% decision coverage in this case</li>
+            <li>The statement is false. The statement is too broad. It may be correct or not, depending on the tested software</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #21</button>
+        <div class="panel">
+            <h5>Answer: b</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is not correct. While the given statement is true, the explanation is not. The relationship between statement and decision coverage is misrepresented</li>
+                    <li>Is correct. Since any test case will cause the outcome of the “if” statement to be either TRUE or FALSE, by definition we achieved 50% decision coverage</li>
+                    <li>Is not correct. A single test case can give more than 25% decision coverage, this means according to the statement above always 50 % decision coverage</li>
+                    <li>Is not correct. The statement is specific and always true, because each test case achieves 50 % decision coverage</li>
+                </ol>
+            </p>
+        </div>
+
+        <h2>Question #22 (1 Point)</h2>
+        <h4>Which one of the following is the description of statement coverage?</h4>
+        <ol type='a'>
+            <li>It is a metric, which is the percentage of test cases that have been executed</li>
+            <li>It is a metric, which is the percentage of statements in the source code that have been executed</li>
+            <li>It is a metric, which is the number of statements in the source code that have been executed by test cases that are passed</li>
+            <li>It is a metric, that gives a true/false confirmation if all statements are covered or not</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #22</button>
+        <div class="panel">
+            <h5>Answer: b</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is not correct. Statement coverage measures the percentage of statements exercised by test cases</li>
+                    <li>Is correct. Statement testing exercises the executable statements in the code. Statement coverage is measured as the number of statements executed by the tests divided by the total number of executable statements in the test object, normally expressed as a percentage</li>
+                    <li>Is not correct. The coverage does not measure pass/fail</li>
+                    <li>Is not correct. It is a metric and does not provide true/false statements</li>
+                </ol>
+            </p>
+        </div>
+
+        <h2>Question #23 (1 Point)</h2>
+        <h4>Which statement about the relationship between statement coverage and decision coverage is true?</h4>
+        <ol type='a'>
+            <li>100% decision coverage also guarantees 100% statement coverage</li>
+            <li>100% statement coverage also guarantees 100% decision coverage</li>
+            <li>50% decision coverage also guarantees 50% statement coverage</li>
+            <li>Decision coverage can never reach 100%</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #23</button>
+        <div class="panel">
+            <h5>Answer: a</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is correct. The statement is true. Achieving 100% decision coverage guarantees 100% statement coverage</li>
+                    <li>Is not correct. The statement is false because achieving 100 % statement coverage does not in any case mean that the decision coverage is 100%</li>
+                    <li>Is not correct. The statement is false because we can only do statements about 100% values</li>
+                    <li>Is not correct. The statement is false</li>
+                </ol>
+            </p>
+        </div>
+
+        <h2>Question #24 (1 Point)</h2>
+        <h4>For which of the following situations is exploratory testing suitable?</h4>
+        <ol type='a'>
+            <li>When time pressure requires speeding up the execution of tests already specified</li>
+            <li>When the system is developed incrementally, and no test charter is available</li>
+            <li>When testers are available who have enough knowledge of similar applications and technologies</li>
+            <li>When an advanced knowledge of the system already exists, and evidence is to be if it should be tested intensively</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #24</button>
+        <div class="panel">
+            <h5>Answer: c</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is not correct. Exploratory testing is not suitable to speed up tests, which are already specified. It is most useful when there are few or inappropriate specified requirements or significant time pressure on testing</li>
+                    <li>Is not correct. The absence of a test charter, which may have been derived from the test analysis, is a poor precondition for the use of exploratory testing</li>
+                    <li>Is correct. Exploratory tests should be performed by experienced testers with knowledge of similar applications and technologies</li>
+                    <li>Is not correct. Explorative testing alone is not suitable to provide evidence that the test was very intensive, instead the evidence is provided in combination with other test methods</li>
+                </ol>
+            </p>
+        </div>
+
+        <h2>Question #25 (1 Point)</h2>
+        <h4>An employee’s bonus is to be calculated. It cannot be negative, but it can be calculated down to zero. The bonus is based on the length of employment:</h4>
+        <ul>
+            <li>Less than or equal to 2 years</li>
+            <li>More than 2 years but less than 5 years</li>
+            <li>5 to 10 years inclusively</li>
+            <li>Longer than 10 years</li>
+        </ul>
+        <p>What is the minimum number of test cases required to cover all valid equivalence partitions for calculating the bonus?</p>
+        <ol type='a'>
+            <li>3</li>
+            <li>5</li>
+            <li>2</li>
+            <li>4</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #25</button>
+        <div class="panel">
+            <h5>Answer: d</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is not correct. One too few (see the four correct partitions in the correct answer)</li>
+                    <li>Is not correct. One too much (see the four correct partitions in the correct answer)</li>
+                    <li>Is not correct. Two too few (see the four correct partitions in the correct answer)</li>
+                    <li>Is correct. The 4 equivalence partitions correspond to the description in
+                        the question, i.e., at least one test case must be created for each
+                        equivalence partition:
+                        <ol type='1'>
+                            <li>Equivalence partition: 0 ≤ employment time ≤ 2</li>
+                            <li>Equivalence partition: 2 < employment time < 5</li>
+                            <li>Equivalence partition: 5 ≤ employment time ≤ 10</li>
+                            <li>Equivalence partition: 10 < employment time</li>
+                        </ol>
+                    </li>
+                </ol>
+            </p>
+        </div>
+
+        <h2>Question #26 (1 Point)</h2>
+        <h4>A speed control and reporting system has the following characteristics:</h4>
+        <ul>
+            <li>If you drive 50 km/h or less, nothing will happen.</li>
+            <li>If you drive faster than 50 km/h, but no more than 55 km/h, you will be warned.</li>
+            <li>If you drive faster than 55 km/h but not more than 60 km/h, you will be fined.</li>
+            <li>If you drive faster than 60 km/h, your driving license will be suspended.</li>
+            <li>The speed in km/h is available to the system as an integer value.</li>
+        </ul>
+        <p>Which would be the most likely set of values (km/h) identified by applying the boundary value analysis, where only the values on the boundaries of the equivalence classes are selected?</p>
+        <ol type='a'>
+            <li>0, 49, 50, 54, 59, 60</li>
+            <li>50, 55, 60</li>
+            <li>49, 50, 54, 55, 60, 62</li>
+            <li>50, 51, 55, 56, 60, 61</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #26</button>
+        <div class="panel">
+            <h5>Answer: d</h5>
+            <p>
+                The following partitions can be identified:
+                <ul>
+                    <li><= 50, boundary value 50</li>
+                    <li>51 – 55 boundary values 51, 55</li>
+                    <li>56 – 60 boundary values 56, 60</li>
+                    <li>>=61 boundary value 61</li>
+                </ul>
+                Boundary value according to glossary V.3.2: A minimum or maximum value of an ordered equivalence partition.
+                <ol type='a'>
+                    <li>Is not correct. Does not include all necessary boundary values, but it includes additional values: 0, 49, and 59, which are not boundary values in this equivalence partition</li>
+                    <li>Is not correct. Does not include all necessary boundary values. 51 and 55 are missing</li>
+                    <li>Is not correct. Does not include necessary boundary values but it includes additional values: 49, 62, and 54, which are not boundary values in this equivalence partition</li>
+                    <li>Is correct. includes all necessary boundary values</li>
+                </ol>
+            </p>
+        </div>
+
+        <h2>Question #27 (1 Point)</h2>
+        <p>
+            A company's employees are paid bonuses if they work more than a year in the company and achieve a target which is individually agreed before.
+            <br><br>
+            These facts can be shown in a decision table:
+        </p>
+        <img src="./Sample_Exam_1_Resources/question27.png" />
+
+        <h4>Which of the following test cases represents a situation that can happen in real life, and is missing in the above decision table?</h4>
+        <ol type='a'>
+            <li>Condition1 = YES, Condition2 = NO, Condition3 = YES, Action= NO</li>
+            <li>Condition1 = YES, Condition2 = YES, Condition3 = NO, Action= YES</li>
+            <li>Condition1 = NO, Condition2 = NO, Condition3 = YES, Action= NO</li>
+            <li>Condition1 = NO, Condition2 = YES, Condition3 = NO, Action= NO</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #27</button>
+        <div class="panel">
+            <h5>Answer: d</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is not correct. If there was no agreement on targets, it is impossible to reach the targets. Since this situation can´t occur, this is not a scenario happening in reality</li>
+                    <li>Is not correct. The test case is objectively wrong, since under these conditions no bonus is paid because the agreed target was not reached</li>
+                    <li>Is not correct. There was no agreement on targets, it is impossible to reach the targets. Since this situation can´t occur, this is not a scenario happening in reality</li>
+                    <li>Is correct. The test case describes the situation that the too short period of employment and the non-fulfilment of the agreed target leads to nonpayment of the bonus. This situation can occur in practice but is missing in the decision table</li>
+                </ol>
+            </p>
+        </div>
+
+        <h2>Question #28 (1 Point)</h2>
+        <h4>Which of the following statements about the given state transition diagram and table of test cases is TRUE?</h4>
+        <img src="./Sample_Exam_1_Resources/question28.png" />
+        <ol type='a'>
+            <li>The given test cases cover both valid and invalid transitions in the state transition diagram</li>
+            <li>The given test cases represent all possible valid transitions in the state transition diagram</li>
+            <li>The given test cases represent some of the valid transitions in the state transition diagram</li>
+            <li>The given test cases represent pairs of transitions in the state transition diagram</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #28</button>
+        <div class="panel">
+            <h5>Answer: b</h5>
+            <p>
+                Proposed test case covers all five possible single valid transitions in the given state diagram (S1->S2, S2->S1, S2->S3, S3->S2, and S3->S1).
+                <br>
+                Thus:
+
+                <ol type='a'>
+                    <li>Is not correct. Because no invalid transitions are covered</li>
+                    <li>Is correct. Because all valid transitions are covered</li>
+                    <li>Is not correct. Because all valid transitions are covered</li>
+                    <li>Is not correct. Because the test cases do not have pairs of transitions specified</li>
+                </ol>
+            </p>
+        </div>
+
+        <h2>Question #29 (1 Point)</h2>
+        <p>A video application has the following requirement: The application shall allow playing a video on the following display resolution:</p>
+        <ol type="1">
+            <li>640x480</li>
+            <li>1280x720</li>
+            <li>1600x1200</li>
+            <li>1920x1080</li>
+        </ol>
+        <h4>Which of the following list of test cases is a result of applying the equivalence partitioning test technique to test this requirement?</h4>
+        <ol type='a'>
+            <li>Verify that the application can play a video on a display of size 1920x1080 (1 test case)</li>
+            <li>Verify that the application can play a video on a display of size 640x480 and 1920x1080 (2 test cases)</li>
+            <li>Verify that the application can play a video on each of the display sizes in the requirement (4 test cases)</li>
+            <li>Verify that the application can play a video on any one of the display sizes in the requirement (1 test case)</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #29</button>
+        <div class="panel">
+            <h5>Answer: c</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is not correct. See reason from correct answer</li>
+                    <li>Is not correct. See reason from correct answer</li>
+                    <li>Is correct. This is a case where the requirement gives an enumeration of discrete values. Each enumeration value is an equivalence class by itself; therefore, each will be tested when using equivalence partitioning test technique</li>
+                    <li>Is not correct. See reason from correct answer</li>
+                </ol>
+            </p>
+        </div>
+
+        <h2>Question #30 (1 Point)</h2>
+        <h4>Which of the following statements BEST describes how tasks are divided between the test manager and the tester?</h4>
+        <ol type='a'>
+            <li>The test manager plans testing activities and chooses the standards to be followed, while the tester chooses the tools and sets the tools' usage guidelines</li>
+            <li>The test manager plans, coordinates, and controls the testing activities, while the tester automates the tests</li>
+            <li>The test manager plans, monitors, and controls the testing activities, while the tester designs tests and decides on the release of the test object</li>
+            <li>The test manager plans and organizes the testing and specifies the test cases, while the tester executes the tests</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #30</button>
+        <div class="panel">
+            <h5>Answer: b</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is not correct. Selection of tools is a test manager task</li>
+                    <li>Is correct. The test manager plans, coordinates, and controls the testing activities, while the tester automates the tests</li>
+                    <li>Is not correct. The tester does not decide on the release of the test object</li>
+                    <li>Is not correct. The tester specifies the test cases, the test manager does the prioritization</li>
+                </ol>
+            </p>
+        </div>
+
+        <h2>Question #31 (1 Point)</h2>
+        <h4>Which of the following metrics would be MOST useful to monitor during test execution?</h4>
+        <ol type='a'>
+            <li>Percentage of executed test cases</li>
+            <li>Average number of testers involved in the test execution</li>
+            <li>Coverage of requirements by source code</li>
+            <li>Percentage of test cases already created and reviewed</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #31</button>
+        <div class="panel">
+            <h5>Answer: a</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is correct. Test case execution (e.g., number of test cases run/not run, and test cases passed/failed)</li>
+                    <li>Is not correct. This metric can be measured, but its value is low. The number of testers does not give any information about the quality of the test object or test progress</li>
+                    <li>Is not correct. The coverage of requirements by source code is not measured during test execution. At most, the TEST(!) coverage of the code or requirements is measured</li>
+                    <li>Is not correct. This metric is part of test preparation and not test execution</li>
+                </ol>
+            </p>
+        </div>
+
+        <h2>Question #32 (1 Point)</h2>
+        <h4>Which of the following can affect and be part of the (initial) test planning?</h4>
+        <ol type='a'>
+            <li>Budget limitations</li>
+            <li>Test log</li>
+            <li>Failure rate</li>
+            <li>Use cases</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #32</button>
+        <div class="panel">
+            <h5>Answer: a</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is correct. Making decisions about what to test are documented in the test plan. This means when you are planning the test and there are budget limitations, prioritizing is needed; what should be tested and what should be omitted</li>
+                    <li>Is not correct. Test log</li>
+                    <li>Is not correct. Failure rate</li>
+                    <li>Is not correct. Use cases</li>
+                </ol>
+            </p>
+        </div>
+
+        <h2>Question #33 (1 Point)</h2>
+        <h4>Which of the following lists contains only typical exit criteria from testing?</h4>
+        <ol type='a'>
+            <li>Reliability measures, test coverage, schedule, and status about fixing defects and remaining risks</li>
+            <li>Reliability measures, test coverage, degree of tester's independence, and product completeness</li>
+            <li>Reliability measures, test coverage, test cost, availability of test environment, time to market, and product completeness</li>
+            <li>Time to market, remaining defects, tester qualification, availability of testable use cases, test coverage, and test cost</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #33</button>
+        <div class="panel">
+            <h5>Answer: a</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is correct. Reliability measures, test coverage, schedule, and status about fixing defects and remaining risks are typical exit criteria from testing</li>
+                    <li>Is not correct. The "degree of tester's independence" does not play a role in exit criteria</li>
+                    <li>Is not correct. "Availability of test environment" is an entry criterion</li>
+                    <li>Is not correct. "The Qualification of Tester" is not a typical exit criterion</li>
+                </ol>
+            </p>
+        </div>
+
+        <h2>Question #34 (1 Point)</h2>
+        <h4>Which one of the following is NOT included in a test summary report?</h4>
+        <ol type='a'>
+            <li>Defining pass/fail criteria and objectives of testing</li>
+            <li>Deviations from the test approach</li>
+            <li>Measurements of actual progress against exit criteria</li>
+            <li>Evaluation of the quality of the test object</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #34</button>
+        <div class="panel">
+            <h5>Answer: a</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is correct. This information has been defined earlier in the test project</li>
+                    <li>Is not correct. This information is included in a test report: information on what occurred during a test period</li>
+                    <li>Is not correct. This information is included in a test report:
+                        <ul>
+                            <li>Status of testing and product quality with respect to the exit criteria or definition of done</li>
+                            <li>Metrics of defects, test cases, test coverage, activity progress, and resource consumption</li>
+                        </ul>
+                    </li>
+                    <li>Is not correct. This information is included in a test report: Information and metrics to support recommendations and decisions about future actions, such as an assessment of defects remaining, the economic benefit of continued testing, outstanding risks, and the level of confidence in the tested software</li>
+                </ol>
+            </p>
+        </div>
+
+        <h2>Question #35 (1 Point)</h2>
+        <p>The project develops a "smart" heating thermostat. The control algorithms of the thermostat were modeled as Matlab/Simulink models and run on the internet connected server. The thermostat uses the specifications of the server to trigger the heating valves. The test manager has defined the following test strategy/approach in the test plan:</p>
+        <ul>
+            <li>The acceptance test for the whole system is executed as an experience-based test.</li>
+            <li>The control algorithms on the server are checked against standard of the energy saving regulation.</li>
+            <li>The functional test of the thermostat is performed as risk-based testing.</li>
+            <li>The security tests of data/communication via the internet are executed together with external security experts.</li>
+        </ul>
+        <h4>What four common types of test strategies/approaches did the test manager implement in the test plan?</h4>
+        <ol type="a">
+            <li>Methodical, analytical, reactive, and regression-averse</li>
+            <li>Analytical, standard-compliant, consultative, and reactive</li>
+            <li>Model-based, methodical, analytical, and consultative</li>
+            <li>Regression-averse, consultative, reactive, and methodical</li>
+        </ol>          
+        Select ONE option.
+        <button class="accordion">Question #35</button>
+        <div class="panel">
+            <h5>Answer: b</h5>
+            <p>
+                The possible mappings of points 1 to 4 can be justified as follows:
+                <ol type="1">
+                    <li>Approach 3 is analytical: Risk-based testing is an example of an analytical approach, where tests are designed and prioritized based on the level of risk.</li>
+                    <li>Approach 2 is standard-compliant: The control algorithms are checked against industry-specific standards of the energy saving regulation.</li>
+                    <li>Approach 4 is consultative: This type of test strategy is driven primarily by the advice, guidance, or instructions of stakeholders, business domain experts, or technology experts, who may be outside the test team or outside the organization itself.</li>
+                    <li>Approach 1 is reactive: Exploratory testing is a common technique employed in reactive strategies, whereby the exploratory testing is assigned to the experience-based testing category.</li>
+                </ol>
+                Thus:
+                <ol type="a">
+                    <li>Is not correct</li>
+                    <li>Is correct</li>
+                    <li>Is not correct</li>
+                    <li>Is not correct</li>
+                </ol>
+            </p>
+        </div>
+
+        <h2>Question #36 (1 Point)</h2>
+        <h4>Which one of the following is the characteristic of a metrics-based approach for test estimation?</h4>
+        <ol type='a'>
+          <li>Budget which was used by a previous similar test project</li>
+          <li>Overall experience collected in interviews with test managers</li>
+          <li>Estimation of effort for test automation agreed in the test team</li>
+          <li>Average of calculations collected from business experts</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #36</button>
+        <div class="panel">
+          <h5>Answer: a</h5>
+          <p>
+            <ol type='a'>
+              <li>Is correct. The metrics-based approach: estimating the testing effort based on metrics of former similar projects or based on typical values</li>
+              <li>Is not correct. This is an expert-based approach: estimating the tasks based on estimates made by the owners of the tasks or by experts</li>
+              <li>Is not correct. This is an expert-based approach: estimating the tasks based on estimates made by the responsible team of the tasks or by experts</li>
+              <li>Is not correct. This is an expert-based approach: estimating the tasks based on estimates made by the owners of the tasks or by experts</li>
+            </ol>
+          </p>
+        </div>
+
+
+        <h2>Question #37 (1 Point)</h2>
+        <p>
+            As a test manager you are responsible for testing the following parts of requirements:
+            <ul>
+                <li>R1 - Process anomalies</li>
+                <li>R2 - Synchronization</li>
+                <li>R3 - Approval</li>
+                <li>R4 - Problem solving</li>
+                <li>R5 - Financial data</li>
+                <li>R6 - Diagram data</li>
+                <li>R7 - Changes to the user profile</li>
+            </ul>
+            Notation: Logical requirement dependencies (A -> B means, that B depends on A):
+        </p>
+        <img src="./Sample_Exam_1_Resources/question37.png" />
+
+        <h4>Which one of the following options structures the test execution schedule according to the requirement dependencies?</h4>
+        <ol type='a'>
+            <li>R1 ; R3 ; R4 ; R7 ; R2 ; R5 ; R6</li>
+            <li>R1 ; R3 ; R2 ; R4 ; R7 ; R5 ; R6</li>
+            <li>R1 ; R3 ; R2 ; R5 ; R6 ; R4 ; R7</li>
+            <li>R1 ; R2 ; R5 ; R6 ; R3 ; R4 ; R7</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #27</button>
+        <div class="panel">
+            <h5>Answer: c</h5>
+            <p>
+                <ol type='a'>
+                    <li>Is not correct. R4 is dependent on R2, so R2 should be tested before R4.</li>
+                    <li>Is not correct. R4 is dependent on R2, R5, and R6, so R5 and R6 should be tested before R4.</li>
+                    <li>Is correct. The tests are specified in a sequence that takes the dependencies into account.</li>
+                    <li>Is not correct. R2 is dependent on R3, so R3 should be tested before R2.</li>
+                  </ol>
+            </p>
+        </div>
+
+        <h2>Question #38 (1 Point)</h2>
+        <h4>You are testing a new version of software for a coffee machine. The machine can prepare different types of coffee based on four categories. i.e., coffee size, sugar, milk, and syrup. The criteria are as follows:</h4>
+        <ul>
+          <li>Coffee size (small, medium, large)</li>
+          <li>Sugar (none, 1 unit, 2 units, 3 units, 4 units)</li>
+          <li>Milk (yes or no)</li>
+          <li>Coffee flavor syrup (no syrup, caramel, hazelnut, vanilla)</li>
+        </ul>
+        <p>Now you are writing a defect report with the following information:</p>
+        <ul>
+          <li>Title: Low coffee temperature.</li>
+          <li>Short summary: When you select coffee with milk, the time for preparing coffee is too long and the temperature of the beverage is too low (less than 40 °C).</li>
+          <li>Expected result: The temperature of coffee should be standard (about 75 °C).</li>
+          <li>Degree of risk: Medium</li>
+          <li>Priority: Normal</li>
+        </ul>
+        <h4>What valuable information was omitted in the above defect report?</h4>
+        <ol type='a'>
+          <li>The actual test results</li>
+          <li>Identification of the tested software version</li>
+          <li>Status of the defect</li>
+          <li>Ideas for improving the test case</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #38</button>
+        <div class="panel">
+          <h5>Answer: b</h5>
+          <p>
+            <ol type='a'>
+              <li>Is not correct. The test result is given in the short summary</li>
+              <li>Is correct. When testing different versions of software, identifying information is necessary</li>
+              <li>Is not correct. You are just writing the defect report; hence, the status is automatically open</li>
+              <li>Is not correct. This information is useful for the tester but does not need to be included in the defect report</li>
+            </ol>
+          </p>
+        </div>
+
+        <h2>Question #39 (1 Point)</h2>
+        <h4>Which one of the following is MOST likely to be a benefit of test execution tools?</h4>
+        <ol type='a'>
+          <li>It is easy to create regression tests</li>
+          <li>It is easy to maintain version control of test assets</li>
+          <li>It is easy to design tests for security testing</li>
+          <li>It is easy to run regression tests</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #39</button>
+        <div class="panel">
+          <h5>Answer: d</h5>
+          <p>
+            <ol type='a'>
+              <li>Is not correct. The benefits are not when creating regression tests, more in executing them</li>
+              <li>Is not correct. This is done by configuration management tools</li>
+              <li>Is not correct. This needs specialized tools</li>
+              <li>Is correct. Reduction in repetitive manual work (e.g., running regression tests, environment set up/tear down tasks, re-entering the same test data, and checking against coding standards), thus saving time</li>
+            </ol>
+          </p>
+        </div>
+        
+        <h2>Question #40 (1 Point)</h2>
+        <h4>Which one of the following test tools is mostly suitable for developers rather than testers?</h4>
+        <ol type='a'>
+          <li>Requirement management tools</li>
+          <li>Configuration management tools</li>
+          <li>Static analysis tools</li>
+          <li>Performance testing tools</li>
+        </ol>
+        Select ONE option.
+        <button class="accordion">Question #40</button>
+        <div class="panel">
+          <h5>Answer: c</h5>
+          <p>
+            <ol type='a'>
+              <li>Is not correct. Requirement management tools are not particularly suitable for developers</li>
+              <li>Is not correct. Configuration management tools are not particularly suitable for developers</li>
+              <li>Is correct. Static analysis tools are especially suitable for developers</li>
+              <li>Is not correct. Performance testing tools are not better suited for developers than for testers</li>
+            </ol>
+          </p>
+        </div>
+    </body>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+</html>
